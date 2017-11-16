@@ -1,17 +1,19 @@
-.icon-input-inner {
+.icon-inp {
     position: absolute;
-    top:25px;
+    top:50%;
+    transform: translateY(-50%);
     font-size: 18px;
     left:12px;
     opacity: 0.2;
     pointer-events: none;
-}
-.icon-password {
-    font-size: 22px;
-    top:22px;
+
+    &--lock {
+        font-size: 22px;    
+    }
 }
 .social-icon {
     position:absolute;
     left:10px;
-    top:10px;
+    top:50%;
+    transform: translateY(-50%);
 }
