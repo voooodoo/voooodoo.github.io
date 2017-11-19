@@ -19,19 +19,19 @@
     		    </div>
     		    <form action="#" class="form__content">
     			    <div class="form-group">
-                        <input type="text" placeholder="E-mail or login">
-                        <span class="icon-mail-alt icon-inp"></span>
+                        <input type="email" placeholder="E-mail or login">
+                        <span class="icon-inp icon-mail-alt"></span>
                     </div>
             	    <div class="form-group">
                         <input type="password" placeholder="Password">
-                        <span class="icon-lock icon-inp icon-inp--lock"></span>
+                        <span class="icon-inp--lock icon-lock icon-inp"></span>
                     </div>
     			    <div class="form__fog-password">
     				    <a href="#">Forgot password?</a>
     			    </div>
     			    <button class="btn btn--primary btn--full-w" type="submit">Sign Up</button>
-    			    <div class="form-group form__separator">OR</div>
-    			    <div class="form-group form-multiply">
+                    <div class="form-group form__separator" data-content="OR"></div>
+    			    <div class="form-group form-group--multiply">
     				    <button class="form__social-link btn btn--primary">Login via Facebook</button>
     				    <button class="form__social-link btn btn--primary">Login via Twitter</button>
     			    </div>
@@ -59,8 +59,8 @@
     				    <label for="checkBox1"><span>Remember password?</span></label>
     			    </div>
     			    <button class="btn btn--secondary btn--full-w" type="submit">Sign In</button>
-    			    <div class="form-group form__separator">OR</div>
-    			    <div class="form-group form-multiply">
+    			    <div class="form-group form__separator" data-content="OR"></div>
+    			    <div class="form-group form-group--multiply">
     				    <button class="form__social-link btn btn--primary">Login via Facebook</button>
     				    <button class="form__social-link btn btn--primary">Login via Twitter</button>
     			    </div>
@@ -92,10 +92,10 @@
     					<a href="#">Forgot password?</a>
     				</div>
     				<button class="btn btn--primary btn--full-w" type="submit">Sign In</button>
-    				<div class="form-group form__separator">OR</div>
-    				<div class="form-group form-multiply">
-    					<button class="form__social-link-sm btn btn--primary"><span class="icon-facebook social-icon"></span>Facebook</button>
-    					<button class="form__social-link-sm btn btn--primary"><span class="icon-twitter social-icon"></span>Twitter</button>
+    				<div class="form-group form__separator" data-content="OR"></div>
+    				<div class="form-group form-group--multiply">
+    					<button class="form__social-link form__social-link--sm btn btn--primary"><span class="icon-facebook social-icon"></span>Facebook</button>
+    					<button class="form__social-link form__social-link--sm btn btn--primary"><span class="icon-twitter social-icon"></span>Twitter</button>
     				</div>
                 </div>
     		</form>
@@ -123,10 +123,10 @@
                         <label for="checkBox-2"><span>Remember password?</span></label>
                     </div>
                     <button class="btn btn--secondary btn--full-w" type="submit">Sign In</button>
-                    <div class="form-group form__separator">OR</div>
-                    <div class="form-group form-multiply">
-                        <button class="form__social-link-sm btn btn--primary"><span class="icon-facebook social-icon"></span>Facebook</button>
-                        <button class="form__social-link-sm btn btn--primary"><span class="icon-twitter social-icon"></span>Twitter</button>
+                    <div class="form-group form__separator" data-content="OR"></div>
+                    <div class="form-group form-group--multiply">
+                        <button class="form__social-link form__social-link--sm btn btn--primary"><span class="icon-facebook social-icon"></span>Facebook</button>
+                        <button class="form__social-link form__social-link--sm btn btn--primary"><span class="icon-twitter social-icon"></span>Twitter</button>
                     </div>
                 </div>
             </form>    
@@ -160,20 +160,18 @@
                     <div class="form__content--sm">
                         <span class="form__head-sm-title">Subscribing</span>
                         <p class="form__description">We will never send you spam or some other trash</p>
-                        <div class="form-multiply">
-                            <div class="form-group form-group--sm form-sm">
+                        <div class="form-group form-group--multiply">
+                            <div class="form__subscribe">
                                 <input type="email" placeholder="E-mail">
                                 <span class="icon-mail-alt icon-inp"></span>
                             </div>
-                            <div class="form-group--sm">
-                                <button class="btn btn--warning  btn--icon" type="submit">
-                                    <span class="icon-right-open"></span>
-                                </button>
-                            </div>
+                            <button class="btn btn--warning  btn--icon" type="submit">
+                                <span class="icon-right-open"></span>
+                            </button>
                         </div>
                     </div>        
                 </form>
-            </div>
+                </div>
             </div>
 
         </div>
@@ -185,18 +183,19 @@
         <div class="form-7">
             <div class="form">
                 <div class="form__head-sm form__head-sm-title">Contact</div>
-            <form action="#" class="form__content form-multiply">
-                <div class="form-group form-group--md">
-                    <label class="form__label">Name
-                        <input type="text" placeholder="Name">
-                    </label>
-                </div>
-                <div class="form-group form-group--md">
-                    <label class="form__label">E-mail
-                        <input type="email" placeholder="Email">
-                    </label>
-                </div>
-                <div class="form-group form-group--md">
+            <form action="#">
+                <div class="form__content form__content--bottom form-group--multiply">
+                    <div class="form-group form-group--md">
+                        <label class="form__label">Name
+                            <input type="text" placeholder="Name">
+                        </label>
+                    </div>
+                    <div class="form-group form-group--md">
+                        <label class="form__label">E-mail
+                            <input type="email" placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="form-group form-group--md">
                     <label class="form__label">Subject
                         <input type="text" placeholder="Subject">
                     </label>
@@ -210,12 +209,13 @@
                         </select>
                     </label>
                 </div>
-                <div class="form-group">
+                <div class="form-group form-group--md">
                     <label class="form__label">Message
                         <textarea name="textarea" placeholder="Subject"></textarea>
                     </label>
                 </div>
-                <div class="form-group form-multiply">
+            </div>    
+            <div class="form__content form-group form-group--multiply">
                     <div class="form__checkbox form__checkbox--top">
                         <input type="checkbox" class="form__checkBox" id="form-7__checkbox">
                             <label for="form-7__checkbox">
@@ -263,28 +263,28 @@
             <div class="form__head-sm form__head-sm-title">Cart</div>
             <form action="#">
                 <div class="form__content">
-                    <table class="form-9__table">
+                    <table class="form__table">
                         <tr class="border-b">
                             <th></th>
                             <th>Item</th>
-                            <th class="form-9__table--price">Price</th>
-                            <th class="form-9__table--quantity center" colspan="3">Quantity</th>
-                            <th class="form-9__table--total">Total</th>
+                            <th class="form__table--price">Price</th>
+                            <th class="form__table--quantity center" colspan="3">Quantity</th>
+                            <th class="form__table--total">Total</th>
                         </tr>
                         <tr class="border-b">
-                            <td class="form-9__table--img"><img src="assets/img/tb/item.jpg" alt=""></td>
-                            <td class="form-9__table--desc">Leather Bag</td>
+                            <td class="form__table--img"><img src="assets/img/tb/item.jpg" alt=""></td>
+                            <td class="form__table--desc">Leather Bag</td>
                             <td>$199</td>
-                            <td class="form-9__table--calc"><button class="form-9__btn--min"></button></td>
-                            <td class="form-9__table--count">1</td>
-                            <td class="form-9__table--calc form-9__table--plus"><button class="form-9__btn--max"></button></td>
-                        <td class="form-9__table--total">$199</td>
+                            <td class="form__table--calc"><button class="form__btn--min"></button></td>
+                            <td class="form__table--count">1</td>
+                            <td class="form__table--calc form__table--plus"><button class="form__btn--max"></button></td>
+                        <td class="form__table--total">$199</td>
                         </tr>
                         <tr class="border-b">
-                        <td class="form-9__table--img">
+                        <td class="form__table--img">
                             <img src="assets/img/tb/item-2.jpg" alt="">
                         </td>
-                        <td class="form-9__table--desc">
+                        <td class="form__table--desc">
                             <table>
                                 <tr>
                                     <td class="description" colspan="2">Leather Belt</td>
@@ -295,20 +295,20 @@
                             </table>
                         </td>
                         <td>$49</td>
-                        <td class="form-9__table--calc">
-                            <button class="form-9__btn--min"></button>
+                        <td class="form__table--calc">
+                            <button class="form__btn--min"></button>
                         </td>
-                        <td class="form-9__table--count">2</td>
-                        <td class="form-9__table--calc form-9__table--plus">
-                            <button class="form-9__btn--max"></button>
+                        <td class="form__table--count">2</td>
+                        <td class="form__table--calc form__table--plus">
+                            <button class="form__btn--max"></button>
                         </td>
-                        <td class="form-9__table--total">$98</td>
+                        <td class="form__table--total">$98</td>
                         </tr>
                         <tr class="border-b">
-                        <td class="form-9__table--img">
+                        <td class="form__table--img">
                             <img src="assets/img/tb/item-3.jpg" alt="">
                         </td>
-                        <td class="form-9__table--desc">
+                        <td class="form__table--desc">
                             <table>
                                 <tr>
                                     <td class="description" colspan="4">Leather Shoes</td>
@@ -324,17 +324,17 @@
                             </table>
                         </td>
                         <td>$199</td>
-                        <td class="form-9__table--calc">
-                            <button class="form-9__btn--min"></button></td>
-                        <td class="form-9__table--count">1</td>
-                        <td class="form-9__table--calc form-9__table--plus">
-                            <button class="form-9__btn--max"></button>
+                        <td class="form__table--calc">
+                            <button class="form__btn--min"></button></td>
+                        <td class="form__table--count">1</td>
+                        <td class="form__table--calc form__table--plus">
+                            <button class="form__btn--max"></button>
                         </td>
-                        <td class="form-9__table--total">$199</td>
+                        <td class="form__table--total">$199</td>
                         </tr>
                         <tr>
-                        <td class="form-9__table--subtotal" colspan="6">Subtotal:</td>
-                        <td class="form-9__table--total">$496</td>
+                        <td class="form__table--subtotal" colspan="6">Subtotal:</td>
+                        <td class="form__table--total">$496</td>
                         </tr>
                     </table>
                     <div class="form-multiply form-multiply--center">
@@ -354,7 +354,7 @@
             <div class="form">
             <form action="#">
                 <div class="form__head-sm form__head-sm-title">Shipping Address</div>
-                <div class="form__content form-multiply">
+                <div class="form__content form-group--multiply">
                 <div class="form-group form-group--lg">
                     <label class="form__label">Select Country
                     <select name="select" class="select--warning">
@@ -395,7 +395,7 @@
                 </div>
             </div>
             <div class="form__head-sm form__head-sm-title">Contact info</div>
-                <div class="form__content form-multiply">
+                <div class="form__content form-group--multiply">
                     <div class="form-group form-group--lg">
                         <label class="form__label">Full Name
                             <input type="text" placeholder="Name">
@@ -411,7 +411,7 @@
                             <input  type="tel" placeholder="">
                         </label>
                     </div>
-                    <div class="form-group form-multiply form-multiply--center">
+                    <div class="form-group form-group--multiply form-group--multiply-center">
                         <a href="#"><span class="icon-left-open"></span> Return to Cart</a>
                         <button class="btn btn--secondary btn--md-w">Payment method <span class="icon-right-open"></span></button>
                     </div>
@@ -430,8 +430,8 @@
                 <div class="form__head-sm form__head-sm-title">Payment Method</div>
                 <div class="form__content">    
                 <div class="form-group form-group--xlg">
-                    <div class="form__label form-multiply"><span class="form__label--full-w">Credit Card</span>
-                        <input type="number" class="form__card">
+                    <div class="form__label form-group--multiply"><label for="card" class="form__label--full-w">Credit Card</label>
+                        <input id="card" type="number" class="form__card">
                         <input type="number" class="form__card">
                         <input type="number" class="form__card">
                         <input type="number" class="form__card">
@@ -443,13 +443,13 @@
                     </label>
                 </div>
                 <div class="form-group form-group--xlg">
-                    <div class="form__label form-multiply"><span class="form__label--full-w">Expire</span>
-                        <select name="select" class="form-group--small select--warning">
+                    <div class="form__label form-group--multiply"><label for="month" class="form__label--full-w">Expire</label>
+                        <select id="month" name="select" class="form-group--md select--warning">
                             <option value="1">Month</option>
                             <option value="2">june</option>
                             <option value="1">jule</option>
                         </select>
-                        <select name="select" class="form-group--small select--warning">
+                        <select name="select" class="form-group--md select--warning">
                             <option value="1" >Year</option>
                             <option value="2">1917</option>
                             <option value="1">1918</option>
@@ -457,7 +457,7 @@
                     </div>
                 </div>
                 <div class="form-group form-group--xlg">
-                    <label class="form__label form-multiply"><span class="form__label--full-w">CVV</span>
+                    <label class="form__label form-group--multiply"><span class="form__label--full-w">CVV</span>
                         <input class="form__cvv" type="password">
                     </label>
                 </div>
@@ -479,7 +479,7 @@
                 </div>
              
         
-            <div class="form__content form-multiply form-multiply--center">
+            <div class="form__content form-group--multiply form-group--multiply-center">
                 <a href="#"><span class="icon-left-open"></span> Edit Shipping Address</a>
                 <button class="btn btn--secondary btn--md-w">Place Order <span class="icon-right-open"></span></button>
             </div>

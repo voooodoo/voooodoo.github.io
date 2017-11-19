@@ -1,0 +1,50 @@
+[type="number"],
+[type="text"],
+[type="tel"],
+[type="password"],
+[type="email"] {
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid $color-placeholder;
+	font-size: 16px;
+	padding: 12px 44px;
+	@include placeholder() {
+		color:$color-placeholder;
+		font-size: 16px;
+	}
+	&:focus + .icon-inp {
+		opacity: 1;			
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+select {
+	width:100%;
+	padding: 12px;
+	border-radius:5px;
+	background: $btn-primary;
+	color:#fff;
+}
+.select--warning {
+	background: $btn-yellow;
+}
+
+textarea {
+	width: 100%;
+	border-radius: 5px;
+	border: 2px solid $color-placeholder;
+	font-size: 16px;
+	padding: 12px;
+	height: 142px;
+	@include placeholder() {
+		color:$color-placeholder;
+		font-size: 16px;
+	}
+}

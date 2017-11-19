@@ -3,6 +3,8 @@
 @import 'fontello';
 @import 'icons';
 @import 'var';
+@import 'input';
+@import 'btn';
 
 
 /*========common classes=============*/
@@ -29,139 +31,42 @@ img {
 	max-width: 100%;
 }
 
-input   {
-	width: 100%;
-	border-radius: 5px;
-	border: 2px solid $color-placeholder;
-	font-size: rem(16px);
-	padding: rem(12px) rem(44px);
-	@include placeholder() {
-		color:$color-placeholder;
-		font-size: rem(16px);
-	}
-	&:focus + .icon-inp {
-		opacity: 1;			
-	}
-}
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-input[type='number'] {
-    -moz-appearance: textfield;
-}
-
-select {
-	width:100%;
-	padding:rem(12px);
-	border-radius:5px;
-	background: $btn-primary;
-	color:#fff;
-}
-.select--warning {
-	background: $btn-yellow;
-}
-
-textarea {
-	width: 100%;
-	border-radius: 5px;
-	border: 2px solid $color-placeholder;
-	font-size: rem(16px);
-	padding: rem(12px);
-	height: rem(142px);
-	@include placeholder() {
-		color:$color-placeholder;
-		font-size: rem(16px);
-	}
-}
 .form-group {
-	width: 100%;
-	margin-top: rem(24px);
+	margin-top: 24px;
 	position: relative;
 
-	&--sm {
-		margin-top: rem(18px);
+	&--multiply {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
-	&--small {
-		width: rem(154px);
-	}
-	&--md {
-		width: rem(260px);
-	}
-	&--lg {
-		width: rem(272px);
-	}
-	&--xlg {
-		width: rem(324px);
-	}
-}
-.form-multiply {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-	&--center {
+	&--multiply-center {
 		align-items: center;
 		width: 100%;
-	}
-} 
+	} 
 
-.form-sm {
-	width: 200px;
-}
+	&--md {
+		width: 46.5%;
 
-/*===============btn================*/
-.btn {
-	display: block;
-	border-radius:5px;
-	border:none;
-	color:#fff;
-	padding: rem(10px);
-	text-decoration: none;
-	text-align: center;
-	transition: color .2s;
-	font-size: rem(16px);
-}
-
-.btn--primary {
-	background-color:$btn-primary;
-	&:hover {
-		background-color:#3385ff;
+		@include tablet {
+			width: 100%;
+		}
 	}
-}
-
-.btn--secondary {
-	background-color:$btn-green;
-	&:hover {
-		background-color:#248269;
+	&--lg {
+		width: 31%;
+		
+		@include tablet {
+			width: 100%;
+		}
 	}
-}
-.btn--error {
-	background-color:$btn-red;
-	&:hover {
-		background-color:#cc3300;
+	&--xlg {
+		width: 80%;
+		@include tablet {
+			width:100%;
+		}
 	}
-}
-.btn--warning {
-	background-color:$btn-yellow;
-	&:hover {
-		background-color:#cc9900;
-	}
-}
-.btn--full-w {
-	width: 100%;
-	font-size: rem(18px);
-}
-.btn--icon {
-	width: rem(47px);
-	height: rem(47px);
-}
-.btn--md-w {
-	padding-left:rem(28px);
-	padding-right:rem(22px);
-	margin-left: auto;
 }
 
 /*=============section=============*/
@@ -174,8 +79,11 @@ textarea {
 	margin:0 auto;
 	padding: 10px 0;
 
-	@include middle() {
+	@include laptop {
 		justify-content: center;
+	}
+	@include tablet {
+		max-width: 95%;
 	}
 }
 
@@ -200,11 +108,14 @@ textarea {
 	&__head {
 		height: 144px;
 		background-image: url('../../assets/img/bg/singUp.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: rem(30px);
+		margin-bottom: 30px;
 
 		&--sing-in{
 			background-image: url('../../assets/img/bg/singIn.jpg');
@@ -212,9 +123,9 @@ textarea {
 		
 		&-link {
 			position: absolute;
-			top:rem(20px);
-			right:rem(18px);
-			font-size: rem(14px);
+			top: 20px;
+			right: 18px;
+			font-size: 14px;
 			color:#fff;
 						
 			&:hover {
@@ -222,21 +133,21 @@ textarea {
 			}
 		}
 		&-title {
-			font-size: rem(32px);
+			font-size: 32px;
 			text-transform: uppercase;
 			color:#fff;
 		}
 	}
 	&__head-sm {
-		padding:rem(20px) rem(20px) 0;
+		padding: 20px 20px 0;
 		display: flex;
 		justify-content:space-between;
 
 		&-link {
-			font-size: rem(14px);
+			font-size: 14px;
 		}
 		&-title {
-			font-size: rem(16px);
+			font-size: 16px;
 			text-transform: uppercase;
 			text-align: left;
 			color:#000;
@@ -247,42 +158,47 @@ textarea {
 		}
 	}
 	&__block {
-		flex-basis: 50%;
+		width: 50%;
 		position:relative;
+
+		@include tablet {
+			width: 100%;
+		}
 		p {
 			color:$color-placeholder;
-			padding-right: rem(30px);
+			padding-right: 30px;
+			padding-bottom: 30px;
 		}
 	}
 
 	&__content {
-		padding: 0 rem(30px) rem(26px);
+		padding: 0 30px 26px;
 
 		&--sm {
-			padding: rem(20px);
+			padding: 20px;
 		}
 		&--left {
-			padding: 0 0 rem(26px) rem(30px) ;
+			padding-left: 0;
 		}
 		&--bottom {
-			padding: 0
+			padding-bottom: 0;
 		}
 	}
 	
 	&__description {
-		font-size: rem(14px);
+		font-size: 14px;
 		color:$color-placeholder;
-		margin: rem(18px) 0 0;
+		margin: 18px 0 0;
 	}
 
 	&__fog-password {
 		text-align: center;
-		margin-top: rem(15px);
-		margin-bottom: rem(20px);
+		margin-top: 15px;
+		margin-bottom: 20px;
 
 		a {
 			color:$color-placeholder;
-			font-size: rem(14px);
+			font-size: 14px;
 
 			&:hover {
 				color: #737373;
@@ -293,46 +209,58 @@ textarea {
 	&__separator {
 		text-align: center;
 		color:$color-placeholder;
-		margin-bottom: rem(20px);
+		margin-bottom: 20px;
 		position:relative;
 		
 		&:before {
-			position:absolute;
-			content:"";
+		    content: '';
+    		background: $color-placeholder;
+			@include centered(y);
 			left:0;
-			top: 50%;
-			transform:translateY(-50%);
-			height: 2px;
-			width: 42%;
-			background:$color-placeholder; 
+    		width: 100%;
+			height: 2px; 
+		}
+  		&:after {
+    		content: attr(data-content);
+    		position: relative;
+    		display: inline-block;
+    		padding: 0 10px;
+			background: $bg-gray; 
 		}
 
+
+
+		/*&:before,
 		&:after {
-			position:absolute;
-			content:"";	
-			right:0;
-			top: 50%;
-			transform:translateY(-50%);
+			content:"";
+			@include centered(y);
 			height: 2px;
 			width: 42%;
 			background:$color-placeholder; 
 		}
+		&:before {
+			left:0;
+		}
+
+		&:after {	
+			right:0;
+		}*/
 	}
 
 	&__social-link {
-		width: 190px;
+		width: 45%;
+
 	}
-	&__social-link-sm {
-		width: 110px;
-		font-size: rem(14px);
+	&__social-link--sm {
+		font-size: 14px;
 		position: relative;
 	}
 	&__checkbox {
 		text-align: left;
 		color:$color-placeholder;
-		font-size: rem(14px);
-		margin-bottom: rem(20px);
-		margin-top: rem(15px);
+		font-size: 14px;
+		margin-bottom: 20px;
+		margin-top: 15px;
 		position: relative;
 
 		&--top {
@@ -370,18 +298,22 @@ textarea {
 		}
 	}
 
+	&__subscribe {
+		width: calc(100% - 47px - 14px);
+	}
+
 	&__label {
 		color:$color-placeholder;
 		
 		input {
-			padding-left:rem(10px);
-			margin-top: rem(12px);
+			padding-left:10px;
+			margin-top:12px;
 		}
 		select {
-			margin-top: rem(12px);
+			margin-top:12px;
 		}
 		textarea {
-			margin-top: rem(12px);
+			margin-top: 12px;
 		}
 
 		&--full-w {
@@ -389,16 +321,16 @@ textarea {
 		}
 	}
 	&__card {
-		width:rem(74px);
+		width:23%;
 	}
 	&__cvv {
-		width:rem(70px);
+		width:70px;
 	}
 	&__total-price {
 		position:absolute;
-		right: rem(30px);
-		bottom:rem(26px);
-		font-size: rem(24px);
+		right: 30px;
+		bottom:26px;
+		font-size:24px;
 	}
 
 }
@@ -408,6 +340,10 @@ textarea {
 	width: 460px;
 	margin-bottom: 20px;
 	margin-right: 10px;
+
+	@include tablet {
+		margin-right: 0;
+	}
 }
 
 .form-2 {
@@ -420,6 +356,10 @@ textarea {
 	width: 300px;
 	margin-right: 10px;
 	margin-bottom: 20px;
+	
+	@include tablet {
+		margin-right: 0;
+	}
 }
 
 .form-5,
@@ -432,21 +372,23 @@ textarea {
 	width:620px;
 	margin-right: 10px;
 	margin-bottom: 20px;
+	
+	@include tablet {
+		margin-right: 0;
+	}
 }
 
 .form-8 {
 	width:300px;
-	margin-bottom: rem(20px);
+	margin-bottom: 20px;
 }
 
 /*============form-9===============*/
 .border-b {
 	border-bottom:2px solid $color-placeholder;
 }
-.form-9 {
-	width: 100%;
-	border-radius:5px;
-
+.form {
+	
 	&__btn--min {
 		width: 26px;
 		height: 26px;
@@ -526,6 +468,7 @@ textarea {
 	} 
 }
 /*==================end form-9=======*/
+.form-9,
 .form-10,
 .form-11 {
 	width: 100%;
