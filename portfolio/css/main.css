@@ -346,7 +346,7 @@ th {
 .footer-wrap {
   max-width: 62.5rem;
   margin: 0 auto;
-  padding: 1.625rem 0 1.875rem;
+  padding: 1.625rem 1.25rem 1.875rem;
 }
 
 .block-about {
@@ -382,6 +382,10 @@ th {
   font-family: 'Lato',sans-serif;
   font-size: 1rem;
   letter-spacing: .04em;
+}
+
+.block-about__social {
+  margin-bottom: 1.25rem;
 }
 
 .block-about__social-icon {
@@ -466,6 +470,7 @@ th {
   margin-bottom: 2.25rem;
   transition: all .3s;
   border-radius: 0.125rem;
+  width: 30%;
 }
 
 .portfolio__link:hover {
@@ -482,11 +487,10 @@ th {
 }
 
 .portfolio__img {
-  max-width: 18.75rem;
-  max-height: 21.875rem;
   border: 0.0625rem solid silver;
   border-radius: 0.125rem;
   display: block;
+  max-width: 100%;
 }
 
 .section-desc {
@@ -525,5 +529,41 @@ th {
   max-width: 62.5rem;
   margin: 0 auto;
   padding: 0 1.25rem;
+}
+
+@media screen and (max-width:62rem) {
+  .portfolio__link {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width:48rem) {
+  .block-skills__title {
+    margin-bottom: 0.625rem;
+    text-align: center;
+  }
+
+  .block-skills {
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+
+  .block-about {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .portfolio__link {
+    width: 95%;
+  }
+
+  .portfolio__block {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  html {
+    font-size: 0.875rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
