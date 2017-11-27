@@ -306,7 +306,7 @@ th {
 }
 
 .block-skills__scale--80:before {
-  right: 20%;
+  right: 5%;
 }
 
 .block-skills__scale--70:before {
@@ -454,6 +454,7 @@ th {
   transition: all .3s;
 }
 
+.header__list-link:active,
 .header__list-link:hover {
   background: #e25353;
   color: #fff;

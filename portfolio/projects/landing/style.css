@@ -256,7 +256,21 @@ header {
 }		
 
 @media screen and (max-width:900px) {
-	
+
+	.header-top {
+		padding: 10px 0 0;
+	}
+	.slider-text {
+		top:20%;
+	}
+	.my-slider ul li h2 {
+		font-size:28px;
+	}
+	a.download-btn {
+		padding:10px 25px;
+		font-size: 12px;
+	}
+
 	.block4-main article {
 		width:45%; float:left; margin: 0 2.5% 30px 2.5%;
 	}
@@ -279,6 +293,9 @@ header {
 	.block-search {
 			border-top:1px solid #eee;	border-bottom:1px solid #eee; margin-top:10px; padding: 5px 0 7px 0; float:right; 
 		}
+	.logo {
+		display:none;
+	}
 }
 @media screen and (max-width:600px) {
 		.block3-main article { 
