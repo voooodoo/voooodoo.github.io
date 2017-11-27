@@ -553,6 +553,14 @@ th {
     padding-right: 0;
   }
 
+  .logo {
+    width: 45%;
+  }
+
+  .header__menu {
+    width: 45%;
+  }
+
   .portfolio__link {
     width: 95%;
   }
@@ -564,6 +572,32 @@ th {
 
   html {
     font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width:30rem) {
+  .header {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+
+  .header__menu {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+    order: -1;
+  }
+
+  .header__list-link {
+    padding: 1.25rem 0 0.625rem;
+  }
+
+  .section-desc {
+    padding-top: 1.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
