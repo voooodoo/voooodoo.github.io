@@ -364,6 +364,7 @@ th {
   width: 6.875rem;
   height: 8.125rem;
   border: 0.3125rem solid #fff;
+  background-color: #fff;
   background-image: url(../img/ava-white.jpg);
   background-size: cover;
   background-repeat: no-repeat;
