@@ -36,12 +36,6 @@
 
 .icon-linkedin:before {
   content: '\f318';
-  position: absolute;
-  top: -0.25rem;
-}
-
-.icon-linkedin {
-  position: relative;
 }
 
 body,
@@ -372,6 +366,7 @@ th {
   border: 0.3125rem solid #fff;
   background-image: url(../img/ava-white.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .block-about__adress {
@@ -530,6 +525,7 @@ th {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 .wrapper {
