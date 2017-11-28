@@ -523,8 +523,7 @@ th {
   flex: 1;
   background-image: url(../img/brick3.jpg);
   background-size: cover;
-  -webkit-background-size: cover;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   background-repeat: repeat-y;
 }
@@ -602,6 +601,10 @@ th {
 
   .section-desc {
     padding-top: 1.25rem;
+  }
+
+  .content {
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=main.css.map */
