@@ -367,10 +367,10 @@ th {
   position: absolute;
   left: -7.5rem;
   top: -5.9375rem;
-  width: 6.25rem;
-  height: 7.5rem;
-  border: 0.625rem solid #fff;
-  background-image: url(http://www.placecage.com/200/300);
+  width: 6.875rem;
+  height: 8.125rem;
+  border: 0.3125rem solid #fff;
+  background-image: url(../img/ava-white.jpg);
   background-size: cover;
 }
 
@@ -501,8 +501,11 @@ th {
 .section-desc__text {
   font-family: 'Lato',sans-serif;
   color: #1c1516;
+  line-height: 1.5;
+  font-weight: 700;
   font-size: 1.25rem;
   text-align: center;
+  text-shadow: 0 0 1rem rgba(0,0,0,.5);
 }
 
 * {
@@ -522,7 +525,8 @@ th {
   -webkit-box-flex: 1;
   flex: 1;
   background-image: url(../img/brick3.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
