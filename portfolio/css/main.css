@@ -523,6 +523,7 @@ th {
   flex: 1;
   background-image: url(../img/brick3.jpg);
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: repeat-y;
