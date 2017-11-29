@@ -466,8 +466,8 @@ th {
   transition: all .3s;
   border-radius: 0.125rem;
   width: 30%;
-  -webkit-filter: grayscale(25%);
-  filter: grayscale(25%);
+  -webkit-filter: grayscale(20%);
+  filter: grayscale(20%);
 }
 
 .portfolio__link:hover {
