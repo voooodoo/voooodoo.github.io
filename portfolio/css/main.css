@@ -166,6 +166,7 @@ figure {
 }
 
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -226,6 +227,7 @@ input {
 
 input[type=checkbox],
 input[type=radio] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -237,6 +239,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=search] {
   -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -337,7 +340,7 @@ th {
 }
 
 .block-skills__scale--80:before {
-  right: 5%;
+  right: 0;
 }
 
 .block-skills__scale--70:before {
@@ -384,13 +387,16 @@ th {
   color: #fff;
   position: relative;
   -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
 .block-about,
 .footer-wrap {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -403,6 +409,7 @@ th {
 .block-about {
   width: 70%;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-right: 1.875rem;
 }
@@ -449,9 +456,15 @@ th {
   margin-left: 1.875rem;
 }
 
+.block-about__link {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .social-icon {
   font-size: 1.5rem;
   color: #fff;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -461,11 +474,15 @@ th {
 
 .header {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -488,10 +505,13 @@ th {
 
 .header__menu {
   width: 30%;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -503,6 +523,7 @@ th {
   padding: 3.125rem 0 0.625rem;
   width: 33%;
   text-align: center;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -521,6 +542,7 @@ th {
 .portfolio__link {
   display: inline-block;
   margin-bottom: 2.25rem;
+  -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 0.125rem;
   width: 30%;
@@ -529,6 +551,7 @@ th {
 }
 
 .portfolio__link:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(0,0,0,.5);
   box-shadow: 0 0 1rem rgba(0,0,0,.5);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -536,9 +559,12 @@ th {
 
 .portfolio__block {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 3.75rem;
 }
@@ -564,20 +590,24 @@ th {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .container {
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
 }
 
 .content {
   -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   background-image: url(../img/brick3.jpg);
   background-size: cover;
@@ -628,6 +658,7 @@ th {
 
   .portfolio__block {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -639,6 +670,7 @@ th {
 @media screen and (max-width:30rem) {
   .header {
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -650,6 +682,7 @@ th {
   .header__menu {
     width: 100%;
     -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
     order: -1;
   }
 
