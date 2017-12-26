@@ -670,6 +670,10 @@ th {
   html {
     font-size: 0.875rem;
   }
+
+  body {
+    height: auto;
+  }
 }
 
 @media screen and (max-width:30rem) {
