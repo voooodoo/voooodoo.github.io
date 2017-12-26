@@ -26,6 +26,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gmail:before {
+  content: '\e800';
+}
+
+.icon-skype-outline:before {
+  content: '\e801';
+}
+
+.icon-phone:before {
+  content: '\e802';
+}
+
 .icon-github:before {
   content: '\f300';
 }
@@ -262,6 +274,32 @@ th {
   padding: 0;
 }
 
+.about__block {
+  padding: 1.25rem 1.25rem 5rem;
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+.about__title {
+  font-size: 1.625rem;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.about__text-skill {
+  margin: 0.3125rem 0 0 3.125rem;
+}
+
+.about__subtitle {
+  font-weight: 500;
+  margin: 1.5625rem 0 0 3.125rem;
+  padding-left: 0;
+}
+
+.about__text {
+  margin: 0.3125rem 0 0 3.125rem;
+}
+
 .block-skills {
   width: 30%;
 }
@@ -308,6 +346,26 @@ th {
 
 .block-skills__scale--60:before {
   right: 30%;
+}
+
+.contact__block {
+  padding: 1.25rem 1.25rem 5rem;
+}
+
+.contact__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact__link {
+  display: inline-block;
+  margin-bottom: 0.625rem;
+  color: #1c1516;
+  font-size: 1.25rem;
+}
+
+.contact__text {
+  padding-left: 0.625rem;
 }
 
 .copyright {
