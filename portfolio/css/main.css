@@ -322,6 +322,7 @@ th {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   height: 0.625rem;
   border-radius: 6.25rem;
@@ -465,6 +466,7 @@ th {
   font-size: 1.5rem;
   color: #fff;
   -webkit-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -524,6 +526,7 @@ th {
   width: 33%;
   text-align: center;
   -webkit-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -543,6 +546,7 @@ th {
   display: inline-block;
   margin-bottom: 2.25rem;
   -webkit-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s;
   border-radius: 0.125rem;
   width: 30%;
@@ -554,6 +558,7 @@ th {
   -webkit-box-shadow: 0 0 1rem rgba(0,0,0,.5);
   box-shadow: 0 0 1rem rgba(0,0,0,.5);
   -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
