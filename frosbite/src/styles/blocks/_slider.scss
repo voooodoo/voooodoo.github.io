@@ -73,8 +73,12 @@
                 background-image: url('../img/svg/arrow-left.svg');
             }
             &--right {
-                right: -540px;
+                right: -50px;
                 background-image: url('../img/svg/arrow-right.svg');
+                
+                @include media-breakpoint-up(xl) {
+                    right: -540px;
+                }
             }
             @include media-breakpoint-up(md) {
                 display: none;

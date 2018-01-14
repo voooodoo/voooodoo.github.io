@@ -1301,7 +1301,7 @@ template {
 }
 
 .slider-block__arrow--right {
-  right: -540px;
+  right: -50px;
   background-image: url(../img/svg/arrow-right.svg);
 }
 
@@ -3343,6 +3343,10 @@ template {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+
+  .slider-block__arrow--right {
+    right: -540px;
   }
 
   .slider-block__arrow {
