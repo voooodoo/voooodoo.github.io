@@ -1,0 +1,141 @@
+extends ../main-layout
+
+block title
+    | FROSTBITE
+
+block content
+    section.hero
+        .hero__menu
+            a.hero__logo(href='#')
+            a.hero__search(href='#')
+            a.hero__menu-icon(href='#')
+        .hero__topic inside our studio
+        .hero__title FROSTBITE
+    section.team 
+        .container
+            .row.justify-content-center
+                .waves
+                .col-12.title 
+                    | a team of creatives 
+                    br
+                    | based out of california
+    section.about
+        .container-fluid
+            .row.justify-content-center
+                .col-12.col-md-6.about__img
+                .col-10.col-md-6.about-desc
+                    .sub-title  who we are
+                    .text.about__text Nulla faucibus eu dui elementum porttitor. Aliquam sollicitudin tjusto sed laoreet tempus. Praesent eleifend non est non bibendum. Aliquam sed posuere urna.
+        .container-fluid
+            .row.justify-content-center
+                .col-12.col-md-6.about-img-2
+                .col-10.col-md-6.about-desc
+                    .sub-title What we do
+                    .text.about__text Nulla faucibus eu dui elementum porttitor. Aliquam sollicitudin justo sed laoreet tempus. Praesent eleifend non est non bibendum. Aliquam sed posuere urna.
+    section.desc
+        .container 
+            .row.justify-content-center
+                .col-12.col-md-6.desc-text.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget commodo risus. Nulla placerat nunc nulla, id porta sapien varius sed. In vel est a dui sodales varius. In facilisis, risus non maximus scelerisque, mauris massa vehicula tortor, nec vestibulum ipsum sem et magna. Maecenas in purus ut arcu pellentesque tempus. Curabitur viverra quis ipsum vitae hendrerit. Aenean nec consequat neque, non euismod sapien. Nullam fringilla justo sed consequat pellentesque. Praesent egestas porta vestibulum. 
+                .col-12.col-md-6.desc-text.text Nullam gravida odio quis ligula hendrerit, a consectetur nulla tincidunt. Ut finibus, quam id sodales tempus, neque diam fringilla lectus, vel ultricies est neque eget metus. Duis id efficitur libero. Etiam facilisis, ipsum volutpat ultrices finibus, orci sem consectetur leo, in blandit ipsum ex vitae lorem. Praesent placerat odio in lectus maximus, vel vehicula nulla scelerisque. Nullam et feugiat nibh. Nullam ultrices libero nec eros commodo, a tempus metus condimentum.
+                .col-12.col-md-6.btn-block.desc__btn-block 
+                    button(type="button").btn.btn-red journal
+                    button(type="button").btn.btn-outline our story
+    section.block-slider
+        .projects
+            .container
+                .row.justify-content-center
+                    .col-12.title.title--white latest projects
+                    .col-12.col-md-10.text.projects__text Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+                    .col-12.col-md-6.btn-block.projects__btn-block
+                        button(type="button").btn.btn-red view projects
+                        button(type="button").btn.btn-outline contact
+        .container
+            .row.justify-content-center
+                .col-10.col-sm-12.slider
+                    .slider-block
+                        .slider-block__btn
+                        .slider-block__arrow.slider-block__arrow--left
+                        .slider-block__arrow.slider-block__arrow--right
+                        .slider-block__preview                                      
+            .row.justify-content-center
+                .col-12.slider__desc
+                    .slider__indicators
+                        a(href="#").slider__indicators-link 01
+                        a(href="#").slider__indicators-link 02
+                        a(href="#").slider__indicators-link 03
+                    .sub-title.slider__title case studies
+                    .text.slider__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio quis augue iaculis aliquam tristique id sapien. Proin ultricies tortor porta, volutpat sapien nec, hendrerit ligula. Ut id ipsum eu leo maximus rutrum. 
+                    .slider__time 
+                        p 4 hours ago - by Andrew B.        
+    section.block-journal
+        .journal-additional
+        .journal
+            .journal__img
+            .journal__img-2
+            .container
+                .row
+                    .col-12.col-md-5.col-xl-4.journal__desc
+                        .waves.journal__waves
+                        .sub-title journal
+                        .text.journal__text Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+                        button(type="button").btn.btn-red.journal__btn read more
+    section.our-team
+        .container
+            .row.justify-content-center.justify-content-md-between
+                .waves.our-team__waves
+                .col-12.title.our-team__title our team 
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-1.jpg")
+                    .our-team__name Adam Smith
+                    .our-team__pos CEO, Brand director
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-2.jpg")
+                    .our-team__name Eric Johnson
+                    .our-team__pos CEO, Operations director
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-3.jpg")
+                    .our-team__name Cecelia Hines
+                    .our-team__pos photographer
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-4.jpg")
+                    .our-team__name Ben Ferguson
+                    .our-team__pos brand, UI designer
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-5.jpg")
+                    .our-team__name Judy Davis
+                    .our-team__pos ux / ui designer
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+                .col-12.col-md-6.col-xl-4.our-team__block
+                    .our-team__img
+                        img(src="img/team-6.jpg")
+                    .our-team__name Thomas Peterson
+                    .our-team__pos project manager
+                    .text.our-team__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sollicitudin, suscipit enim nec, scelerisque erat
+                    .our-team__social
+                        a.social-tw(href="#")
+                        a.social-fb(href="#")
+

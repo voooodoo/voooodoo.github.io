@@ -1,0 +1,89 @@
+.block-journal {
+    overflow: hidden;
+}
+.journal-additional {
+    @include media-breakpoint-up(md) {
+        height: 90px; 
+    }
+}
+.journal {
+    background-color: $bg-white;
+    padding-bottom: 120px;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 220px;
+        padding-bottom: 225px;
+    }
+
+    &__img {
+        background-image: url('../img/journal.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        margin-bottom: 120px;
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: 0;
+            top:-90px;
+            width: 409px;
+            height:630px;
+            background-image: url('../img/journal-m.jpg');
+            background-position: 0 0;
+            margin-bottom: 0;
+        }
+        @include media-breakpoint-up(xl) {
+            top:-90px;
+            width: 806px;
+            background-image: url('../img/journal-l.jpg');
+        }
+    }
+    &__img-2 {
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            width: 350px;
+            height:350px;
+            left:50%;
+            bottom:40px;
+            background-image: url('../img/journal-2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        @include media-breakpoint-up(xl) {
+            transform: translateX(-50%);
+        }
+    }
+    &__waves {
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-up(md) {
+            margin-left: 0;
+            margin-right:0;
+        }
+    }
+    &__desc {
+        text-align: center;
+        @include media-breakpoint-up(md)  {
+            text-align: left;
+        }
+
+    }
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        
+        @include media-breakpoint-up(md) {
+            margin-top: 12px;
+            margin-bottom: 24px;
+        }
+    }
+    &__btn {
+        @include media-breakpoint-up(md) {
+        margin-left:0;
+        margin-right:0;
+        }
+    }
+}

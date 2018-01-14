@@ -1,0 +1,21 @@
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+
+
+/*==========variables==============*/
+
+$red:#f84444;
+$black:#2c2e37;
+$gray:#949494;
+$btn-text:#818181;
+$bg-white: #fafafa;
+$bg-border: #191919;
+
+@import "helpers/**/*.scss"; 
+@import "blocks/**/*.scss";
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+

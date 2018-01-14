@@ -1,0 +1,92 @@
+.our-team {
+    padding-top:80px;
+
+    & .container {
+        @include media-breakpoint-up(sm) {
+            max-width: 710px;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 770px;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 1170px;
+        }
+    } 
+    &__waves {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__title {
+        margin-bottom: 110px;
+    }
+    &__block {
+        margin-bottom: 120px;
+        @include media-breakpoint-up(md) {
+            max-width: 360px;
+            margin-bottom: 60px;
+        }
+    }
+    &__img {
+        margin-bottom: 62px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+            max-width: 330px;
+        }
+    }
+    &__name {
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color:$black;
+        margin-bottom: 30px;
+        @include media-breakpoint-up(md) {
+           font-size: 15px;
+           margin-bottom: 4px;
+        }
+    }
+    &__pos {
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        color:$black;
+        text-transform: uppercase;
+        
+        @include media-breakpoint-up(md) {
+           font-size: 15px;
+           line-height: 30px;
+        }
+    }
+    &__text {
+        max-width: 570px;
+        text-align: left;
+        position: relative;
+        margin-top: 104px;
+        margin-bottom: 52px;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            margin-top:44px;
+            margin-bottom: 30px;
+        }
+
+        &:before {
+            content:'';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            top:-54px;
+            left:0;
+            background-color: $bg-border;
+            opacity: 0.2;
+            
+            @include media-breakpoint-up(md) {
+                width: 30px;
+                height: 2px;
+                top:-22px;
+            }
+        }
+    }
+
+}
+
