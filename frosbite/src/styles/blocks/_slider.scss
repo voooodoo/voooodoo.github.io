@@ -1,7 +1,13 @@
 .block-slider {
     overflow: hidden;
 }
-
+.carousel {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
 .slider {
     position: relative;
     padding-top:624px;
@@ -12,17 +18,31 @@
         max-width: 1090px;
         padding-top:424px;
     }
-    
+    &__img {
+        width: 600px;
+        height:600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--1 {
+            background-image: url('../img/slider-1-s.jpg');
+        }
+        &--2 {
+            background-image: url('../img/team-1.jpg');
+        }
+        &--3 {
+            background-image: url('../img/team-2.jpg');
+        }
+    }
     &-block {
         width: 100%;
         max-width: 600px;
         height: 600px;
-        background-image: url('../img/slider-1-s.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        
+        
         @include centered(x);
-        top:-87px;
+            top:-87px;
         @include media-breakpoint-up(md) {
             top:-215px;
         }
@@ -193,5 +213,38 @@
                 left:-22px;
             }
         }
+    }
+}
+
+.slick-arrow {
+    @include centered(y);
+    width:21px;
+    height:21px;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border:none;
+    background-color: transparent;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    @include media-breakpoint-up(xl) {
+        display: block;
+        width: 10px;
+        height: 11px;
+    }
+}
+.slick-prev {
+    left: -50px;
+    background-image: url('../img/svg/arrow-left.svg');
+}
+.slick-next {
+    right: -50px;
+    background-image: url('../img/svg/arrow-right.svg');
+                
+    @include media-breakpoint-up(xl) {
+        right: -540px;
     }
 }

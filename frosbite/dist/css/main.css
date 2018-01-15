@@ -562,6 +562,7 @@ html {
   width: device-width;
 }
 
+.slick-slide img,
 article,
 aside,
 dialog,
@@ -877,7 +878,6 @@ progress {
   -webkit-appearance: button;
 }
 
-.slider__time p,
 output {
   display: inline-block;
 }
@@ -887,6 +887,7 @@ summary {
   cursor: pointer;
 }
 
+.slick-slide.slick-loading img,
 template {
   display: none;
 }
@@ -999,6 +1000,103 @@ template {
   margin-left: 40px;
 }
 
+.slick-list,
+.slick-slider {
+  position: relative;
+  display: block;
+}
+
+.slick-slider {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: 0;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:after,
+.slick-track:before {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 .about__img {
   height: 500px;
   background-image: url(../img/about-1-s.jpg);
@@ -1007,8 +1105,7 @@ template {
   background-size: cover;
 }
 
-.about-img-2,
-.slider__time p:before {
+.about-img-2 {
   height: 500px;
   background-image: url(../img/about-2-m.jpg);
   background-position: center;
@@ -1239,19 +1336,43 @@ template {
   overflow: hidden;
 }
 
+.carousel {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .slider {
   position: relative;
   padding-top: 624px;
+}
+
+.slider__img {
+  width: 600px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__img--1 {
+  background-image: url(../img/slider-1-s.jpg);
+}
+
+.slider__img--2 {
+  background-image: url(../img/team-1.jpg);
+}
+
+.slider__img--3 {
+  background-image: url(../img/team-2.jpg);
 }
 
 .slider-block {
   width: 100%;
   max-width: 600px;
   height: 600px;
-  background-image: url(../img/slider-1-s.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1359,19 +1480,46 @@ template {
 
 .slider__time p {
   position: relative;
+  display: inline-block;
 }
 
+.slick-arrow,
 .slider__time p:before {
-  content: '';
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 27px;
-  height: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__time p:before {
+  content: '';
   background-image: url(../img/svg/clock.svg);
   left: -48px;
+  width: 27px;
+  height: 27px;
+}
+
+.slick-arrow {
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+.slick-prev {
+  left: -50px;
+  background-image: url(../img/svg/arrow-left.svg);
+}
+
+.slick-next {
+  right: -50px;
+  background-image: url(../img/svg/arrow-right.svg);
 }
 
 .team {
@@ -2455,6 +2603,10 @@ template {
     height: 14px;
     left: -22px;
   }
+
+  .slick-arrow {
+    display: none;
+  }
 }
 
 @media (min-width:992px) {
@@ -3370,6 +3522,16 @@ template {
 
   .slider__text {
     max-width: 463px;
+  }
+
+  .slick-arrow {
+    display: block;
+    width: 10px;
+    height: 11px;
+  }
+
+  .slick-next {
+    right: -540px;
   }
 
   .team {
