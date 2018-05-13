@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Selection Test</title>
 </head>
 <body>
-    
+    <div class="form">
+        <div class="title">Form</div>
+        <form action="">
+            <div class="form-inner">
+                <div class="form-group">
+                    <input type="text" placeholder="First name" name="firstName">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last name" name="lastName">
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Birthday" name="birthday">
+                </div>
+                <div class="form-group">
+                    <div class="sex-radio">
+                        <div class="sex-radio__title">Sex</div>  
+                        <div class="radio-group">
+                            <input type="radio" name="sex" id="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="sex" id="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="sex-radio__title"><label for="select">Select country</div>
+                    <select name="country" id="select">
+                        <option value="ukraine">Ukraine</option>
+                        <option value="uk">UK</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="password" name="password">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="address" name="address">
+                </div>
+                <div class="form-group">
+                    <textarea name="notes" id="notes" rows="3" placeholder="Notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
