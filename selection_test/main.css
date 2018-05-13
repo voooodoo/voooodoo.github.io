@@ -23,7 +23,8 @@ body {
    background-color: #fff;
 }
 .form-group {
-    margin: 10px 0;   
+    margin: 10px 0;
+    border-bottom: 1px solid #000;   
  }
  [type=text],
  [type=date],
@@ -35,7 +36,7 @@ body {
     border:none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid #000;
+    
     color:#1f1f1f;
     padding:10px 25px;
     width: 100%;
@@ -47,7 +48,6 @@ select {
     border:none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid #000;
     color:#1f1f1f;
     padding:10px 25px;
     width: 100%;
@@ -57,17 +57,18 @@ select {
 .sex-radio {
     border-top: 1px solid #f4f4f4;
     border-bottom: 1px solid #f4f4f4;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
-.radio-group {
-    width:100%;
-    margin: 10px 15px;
-}
-.radio-group label {
-    margin-left:20px;
+
+.sex-radio label {
+    margin-left: 10px;
+    margin-right:20px;
+    font-size: 14px;
 }
 .sex-radio__title {
-    padding:0 30px;
+    padding:0 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 [type=submit] {
     background-color: #4c00d5;
@@ -80,4 +81,7 @@ select {
 .error {
     border-radius:5px;
     border: 2px solid red;
+}
+.succes {
+    border-bottom:1px solid green;
 }

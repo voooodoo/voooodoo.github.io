@@ -25,19 +25,17 @@
                 <div class="form-group">
                     <div class="sex-radio">
                         <div class="sex-radio__title">Sex</div>  
-                        <div class="radio-group">
-                            <input type="radio" name="sex" value="male" checked> 
+                        
+                            <input type="radio" name="sex" value="male" required> 
                             <label for="male">Male</label>
-                        </div>
-                        <div class="radio-group">
                             <input type="radio" name="sex" value="female">
                             <label for="female">Female</label>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="form-group">
-                    <select name="country" id="select">
-                        <option value="0" disabled selected>Select country</option>
+                    <select name="country" id="select" required>
+                        <option value="" disabled selected>Select country</option>
                         <option value="1">Ukraine</option>
                         <option value="2">UK</option>
                         <option value="3">USA</option>

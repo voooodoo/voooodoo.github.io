@@ -6,7 +6,6 @@ submit.addEventListener('click', checkForm);
 
 function checkForm() {
     checkError(form);
-    checkValid(form);
     checkTextFields(form);
     form.addEventListener('change', checkForm);
 }
@@ -22,17 +21,13 @@ function checkTextFields(form) {
     }   
 }
 function checkError(form) {
-    for (let i = 0; i < 9; i++) {
-        if (form[i].validity.valueMissing||!form[i].validity.valid) {
-            form[i].classList.add('error');
-        }
-    }
-}
-
-function checkValid(form) {
-    for (let i = 0; i < 9; i++) {
-        if (form[i].validity.valid) {
-            form[i].classList.remove('error');
+    for (let i = 0; i < form.length; i++) {
+        var elem = form[i];
+        if (!elem.validity.valid) {
+            elem.parentElement.classList.add('error');
+        } else {
+            elem.parentElement.classList.remove('error')
+            elem.parentElement.classList.add('succes');
         }
     }
 }
