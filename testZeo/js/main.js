@@ -30,7 +30,8 @@ function closePopUp() {
 }
 
 function action() {
-    alert('Done');
+    closePopUp();
+    setTimeout(()=> alert('Done'),0);
 }
 
 document.addEventListener('click', function (event) {
@@ -39,4 +40,4 @@ document.addEventListener('click', function (event) {
     if(!popUp.classList.contains('hidden')) {
         closePopUp();
     }
-}, false)
+})
