@@ -64,7 +64,6 @@ var AppComponent = /** @class */ (function () {
         this.isOpenPopup = false;
     };
     AppComponent.prototype.onChanged = function (message) {
-        console.log(message);
         this.message = message;
         this.isOpenForm = false;
         this.isOpenPopup = true;
