@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>credit card</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" name="creditcard" id="creditcard" class="credit-card-form">
+        <div class="credit-card">
+          <div class="title-row"><span class="title">Credit Card</span> <span class="bank-name">Bank Name</span></div>
+
+          <div class="credit-card-number">
+            <label for="cardnumber">Credit Card Number</label>
+            <input
+              type="text"
+              name="cardnumber"
+              id="cardnumber"
+              required
+              value=""
+              maxlength="16"
+              placeholder="0000000000000000"
+            />
+          </div>
+          <div class="details-row">
+            <div class="credit-card-exp-date">
+              <label for="expdate">Expiration Date</label>
+              <input type="text" name="expdate" id="expdate" placeholder="12/20" maxlength="5" required />
+            </div>
+            <div class="credit-card-cvv">
+              <label for="cvv">CVV</label>
+              <input type="password" name="cvv" id="cvv" maxlength="3" placeholder="***" required />
+            </div>
+          </div>
+        </div>
+        <div class="mail-checkbox">
+          <input type="checkbox" id="showmail" name="showmail" /> <label for="showmail">Store the card</label>
+        </div>
+        <div class="email-inp"><input type="email" placeholder="email" name="email" /></div>
+        <div class="actions"><button type="submit" class="btn-submit">Submit</button></div>
+      </form>
+      <div class="succes"><p>Success</p></div>
+    </div>
+    <div class="load">
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
